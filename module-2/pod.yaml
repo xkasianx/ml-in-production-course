@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: http-server-pod
+spec:
+  containers:
+  - name: http-server
+    image: ghcr.io/xkasianx/ml-in-production-course:pr-2
+    ports:
+    - containerPort: 8080

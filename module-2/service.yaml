@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple-server-service
+spec:
+  type: NodePort
+  selector:
+    app: http-server
+  ports:
+  - protocol: TCP
+    port: 9999          # The port that the Service exposes.
+    targetPort: 8080      # The port on the Pods that the traffic is forwarded to.
