@@ -1,4 +1,4 @@
-name: ci
+name: module-2-ci
 
 on:
   pull_request:
